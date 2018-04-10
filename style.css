@@ -91,10 +91,10 @@ header nav{
 /* slider  */
 .slider, .wrap, .slide-content{
   margin: 0;
-  paddding: 0;
+  padding: 0;
   width: 100%;
   height: 100vh;
-  overflow-y: hidde;
+  overflow-y: hidden;
 }
 .wrap{position: relative;}
 
@@ -256,4 +256,30 @@ header nav{
   display: flex;
   background-color: #000;
   color: #fff;
+}
+
+
+@media (max-width:768px) {
+  header nav, header nav li{
+    float: none;
+    text-align: center;
+    width: 100%;
+    overflow-y:hidden;
+  }
+  header #branding{
+    margin-left:-30px;
+    float: none;
+    text-align: center;
+    width: 100%;
+    overflow-y:hidden;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  .slide-content span{
+    margin-top: 40px;
+  }
+   .slide{
+    background-image: url('img/fallback.jpg');
+  }
 }
