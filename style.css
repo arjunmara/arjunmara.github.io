@@ -394,8 +394,8 @@ header nav{
 
 
 /* media query */
-@media (max-width:500px) {
-  header nav, header nav li{
+@media (max-width:480px) {
+  header nav, header nav li, header nav li a{
     float: none;
     text-align: center;
     width: 100%;
