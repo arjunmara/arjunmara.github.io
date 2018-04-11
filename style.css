@@ -1,0 +1,360 @@
+body{
+  font:15px/1.5 Arial,helvetica,sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* global */
+.stop{
+  position:absolute;
+  left:0;
+}
+.container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.my-btn{
+  padding: 0.6rem 1.3rem;
+  background-color: #3BFF6E;
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.my-btn:hover{
+  padding: 0.6rem 1.3rem;
+  background-color: #18CC1B;
+  text-decoration: none;
+  border: 0;
+  color: #;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 10px 15px 0 #000;
+}
+img{
+  width: 100%;
+}
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+
+}
+
+/* header */
+header{
+  background-color:#FFFFFF;
+  color: #000000;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #38491d 3px solid;
+}
+header a{
+  position: relative;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.7s all;
+}
+header a:active{
+  color: #2FCC58;
+}
+header a:hover{
+  color: #2FCC58;
+  transition: 0.7s all;
+}
+header ul{
+  padding: 0;
+  margin: 0;
+}
+header li{
+  padding: 50px 20px 20px 50px;
+  float:right;
+  display: inline;
+  padding: 0px 20px 20px 0px;
+}
+
+header #branding{
+  float: left;
+}
+header #branding img{
+  margin-left: 50px;
+  padding:0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+header nav{
+  float: right;
+  left: 30px;
+  margin-top: 10px;
+}
+/* slider  */
+.slider, .wrap, .slide-content{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.wrap{position: relative;}
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide1{
+  background-image: url('img/image.jpeg');
+}
+.slide2{
+  background-image: url('img/image2.jpg');
+}
+.slide3{
+  background-image: url('img/image3.png');
+}
+.slide4{
+  background-image: url('img/image4.jpeg');
+}
+.slide-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slide-content span{
+  margin-top: -50px;
+  font-size: 6rem;
+  color: #FFE414;
+  text-decoration-color:#000;
+  font-weight: bolder;
+  font-family: 'Tangerine', serif;
+}
+.slide-content p{
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #000;
+  font-family: 'Montserrat';
+  text-decoration: overline;
+}
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top:-60px;
+}
+#arrow-left{
+  float: left;
+  left: 0;
+  margin-left: 30px;
+}
+#arrow-right{
+  float: right;
+  display: inline;
+  right: 0;
+  margin-right: 30px;
+}
+.fa-angle-double-left{
+  color: #fff;
+}
+.fa-angle-double-right{
+  color: #fff;
+}
+
+
+/* top container */
+/* .top-container{
+  border: 3px solid #38491d;
+  display: grid;
+  grid-gap:20px;
+  grid-template-areas:
+  'showcase showcase top-box-a'
+  'showcase showcase top-box-b';
+} */
+/* showcase */
+/* .showcase{
+  grid-area: showcase;
+  min-height: 400px;
+  background-image: url('img/showcase.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.showcase h1{
+  text-align: center;
+  font-size: 4rem;
+  color:#fff;
+  margin-bottom: 0;
+}
+.showcase p{
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 0;
+}
+.top-box{
+  background-color: #ddd;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.top-box:nth-child(even){
+  background-color: #2FCC58;
+}
+.top-box .price{
+  font-size: 2.5rem;
+}
+.top-box-a{grid-area: top-box-a;}
+.top-box-b{grid-area: top-box-b;} */
+/* Boxes */
+.boxes{
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-gap: 20px;
+  min-height: 60vh;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.box{
+  box-shadow: #737F76;
+  background-color: #ccc;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  min-height: 50vh;
+  box-sizing: border-box;
+}
+.box:hover{
+  box-shadow: #737F76;
+  background-color: #D9FFEC;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  transform: scaley(1.1);
+  box-shadow: 0 10px 15px 0 #000;
+  transition: 0.7s;
+}
+.box:nth-child(even){
+  background-color: #2FCC58;
+}
+.box:nth-child(even):hover{
+  background-color: #50CC55;
+  transform: scaley(1.1);
+  transition: 0.7s;
+  overflow-x: hidden;
+}
+/* for news  */
+.news-conatainer{
+  background-image: url("img/image4.jpeg");
+  background-size: cover;
+  background-position: center;
+
+}
+.news{
+    overflow: hidden;
+    margin-top: 50vh;
+    margin-bottom: 25vh;
+    display: grid;
+    grid-gap: 20px;
+    min-height: 40vh;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+.news-content img{
+  width:80px;
+  height: 80px;
+  padding:10px;
+}
+.news-content img:hover{
+  width:80px;
+  height: 80px;
+  padding:10px;
+  transform:scale(1.1);
+  transition: 0.7s ease-out;
+}
+.news-content h1{
+  padding:0;
+  margin:0;
+  font-family: helvetica;
+}
+
+.news-content{
+  background-color: #92C8FF;
+  text-align: center;
+  justify-content:center;
+  border: 1px solid #243240;
+}
+.news-content:nth-child(odd){
+  background-color: #83B4E5;
+  text-align: center;
+  justify-content:center;
+}
+.arrow-news{
+  position:relative;
+  top:50vh;
+}
+
+
+/* @keyframes identifier {
+
+} */
+@keyframes myFrames {
+  0% {
+    transform: translateX(-1400px);
+  }
+  100% {
+  transform: translateX(1400px);
+  }
+}
+
+@keyframes stop {
+0%{
+  transform: translateX(0px);
+}
+100%{
+  transform: translateX(0px);
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media (max-width:768px) {
+  header nav, header nav li{
+    float: none;
+    text-align: center;
+    width: 100%;
+    overflow-y:hidden;
+  }
+  header #branding{
+    margin-left:-30px;
+    float: none;
+    text-align: center;
+    width: 100%;
+    overflow-y:hidden;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  .slide-content span{
+    margin-top: 40px;
+  }
+   .slide{
+    background-image: url('img/fallback.jpg');
+  }
+  .news{
+    overflow-y: hidden;
+  }
+}
