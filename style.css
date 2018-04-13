@@ -200,8 +200,10 @@ header nav{
   grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
 }
 .fade-in{
-  opacity:0;
-  animation: fadeIn 0.5s ease-in 1 forwards;
+  /* opacity:0; for fading in
+  /* animation: fadeIn 0.5s ease-in 1 forwards; */
+  /* for spinner */
+  animation: fadeIn 0.7s ease-in-out 1 forwards;
 }
 /* top container */
 /* .top-container{
@@ -297,12 +299,92 @@ header nav{
   transition: 0.7s;
   overflow-x: hidden;
 }
+/*for filler  */
+.filler{
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 50px;
+  margin-bottom: 30px;
+}
+.filler .text{
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+.text h1{
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+.filler img{
+  height: 200px;
+  width: 200px;
+}
+.image-filler{
+  display: grid;
+  background-color: #fff;
+  justify-content: center;
+  align-content: center;
+}
+.image-filler-2{
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/* for Parallax */
+.wrapper-parallax{
+  position: static;
+  display: grid;
+  margin-top: 50px;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 90vh;
+  background-image: url('img/gallery/tiger.jpeg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+/* .pimg1{
+  background-attachment: fixed;
+  position: relative;
+  min-height: 90vh;
+  background-image: url('img/gallery/tiger.jpeg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+} */
+.pimg1 h1{
+  position: relative;
+  top: 15%;
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+}
+.pimg1 a{
+  margin-top: 200px;
+  position: relative;
+  top: 65%;
+  left:40%;
+  color: #fff;
+  font-size: 3rem;
+}
+
+
+
+
+
+
 /* for news  */
 .news-conatainer{
   background-image: url("img/image4.jpeg");
   background-size: cover;
   background-position: center;
   position:relative;
+
 
 }
 .news{
@@ -372,17 +454,24 @@ header nav{
   align-content: center;
 }
 .image-loader .hidden{
-  animation: fadeOut 3000;
+   animation: fadeIn 4000;
+  /* fadeOut 3000; */ */
   animation-fill-mode: forwards;
 }
 /* @keyframes identifier {
 
 } */
 
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
 @keyframes fadeIn {
-  to{
+  /* to{
     opacity: 1;
-  }
+  } */
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
 }
 
 @keyframes fadeOut {
@@ -461,7 +550,7 @@ header nav{
 
 
 /* media query */
-@media (max-width:480px) {
+@media (max-width:568px) {
   header nav, header nav li, header nav li a{
     float: none;
     text-align: center;
@@ -486,5 +575,11 @@ header nav{
   }
   .news{
     overflow-y: hidden;
+  }
+  .fill2{
+    max-height: 100px;
+  }
+  .pimg1{
+    background-attachment: scroll;
   }
 }

@@ -52,8 +52,8 @@ const opacity = 0.4;
  imgs.forEach(img =>
    img.addEventListener('click',imageClick)
  );
- // set first image opacity
- imgs[0].style.opacity=opacity;
+ // set first image
+ imgs[0].style.opacity = opacity;
 function imageClick(e){
   // reset opacity
   imgs.forEach(img=>(img.style.opacity=1));
@@ -65,6 +65,15 @@ function imageClick(e){
   setTimeout(()=>currentImg.classList.remove('fade-in'),500);
   // change opacity
   e.target.style.opacity = opacity;
-
-
 }
+
+// for sticky nav
+const nav = document.getElementById("#menu");
+const topOfNav = nav.offsetTop;
+
+
+function stickyNav() {
+console.log(topOfNav);
+}
+
+window.addEventListener('scroll',stickyNav);
