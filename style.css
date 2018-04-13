@@ -550,7 +550,7 @@ header nav{
 
 
 /* media query */
-@media (max-width:568px) {
+@media (max-width:480px) {
   header nav, header nav li, header nav li a{
     float: none;
     text-align: center;
