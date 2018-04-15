@@ -178,12 +178,12 @@ header nav{
 #gallery{
   margin:0;
   padding: 0;
-  background-color: #333;
+  background-color: #aaa;
 }
 .container-gallery{
   max-width: 900px;
   margin:auto;
-  border: 3px solid #fff;
+  border: 3px solid #aaa;
   background: #fff;
 }
 .main-img img .imgs img{
@@ -302,9 +302,8 @@ header nav{
 /*for filler  */
 .filler{
   position: relative;
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
   margin-bottom: 30px;
 }
@@ -342,7 +341,7 @@ header nav{
   margin-top: 50px;
   background-attachment: fixed;
   position: relative;
-  min-height: 90vh;
+  min-height: 50vh;
   background-image: url('img/gallery/tiger.jpeg');
   background-position: center;
   background-size: cover;
@@ -357,6 +356,9 @@ header nav{
   background-size: cover;
   opacity: 0.8;
 } */
+.pimg1{
+  text-align: center;
+}
 .pimg1 h1{
   position: relative;
   top: 15%;
@@ -365,10 +367,7 @@ header nav{
   font-size: 5rem;
 }
 .pimg1 a{
-  margin-top: 200px;
-  position: relative;
-  top: 65%;
-  left:40%;
+
   color: #fff;
   font-size: 3rem;
 }
@@ -389,8 +388,10 @@ header nav{
 }
 .news{
     overflow: hidden;
-    margin-top: 50vh;
-    margin-bottom: 25vh;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-gap: 20px;
     min-height: 40vh;
@@ -458,6 +459,66 @@ header nav{
   /* fadeOut 3000; */ */
   animation-fill-mode: forwards;
 }
+
+/*for the footer  */
+.wrap-footer{
+  display: grid;
+  background-color: #ddd;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-gap: 20px;
+}
+li{
+  list-style: none;
+  color: #fff;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.comapanies-associatives{
+  color:#fff;
+}
+.comapanies-associatives h3{
+  margin: 0;
+  padding: 0;
+}
+.quick-links,.social,.our-contacts{
+  margin: 0;
+  padding:0;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+}
+.quick-links h3{
+  margin:0;
+  padding:0;
+}
+.social{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.social h3{
+  margin:0;
+  padding:0;
+}
+
+.wrap-footer,.myfooter{
+  background-color: #1C1717;
+}
+.copyright-section{
+  background-color: #1C1717;
+  margin:0;
+  padding:0;
+  text-align: center;
+  color:#fff;
+}
+
+
+
+
+
 /* @keyframes identifier {
 
 } */
@@ -474,7 +535,7 @@ header nav{
   100% {transform:rotate(360deg);}
 }
 
-@keyframes fadeOut {
+@keyframes fadeOut{
 100%{
   opacity: 0;
   visibility: hidden;
@@ -550,7 +611,7 @@ header nav{
 
 
 /* media query */
-@media (max-width:480px) {
+@media (max-width:568px) {
   header nav, header nav li, header nav li a{
     float: none;
     text-align: center;
@@ -582,4 +643,107 @@ header nav{
   .pimg1{
     background-attachment: scroll;
   }
+  .pimg1 a{
+    width: 100%;
+  }
+}
+
+
+/**********************************About us************************************/
+
+/* about page */
+.hero{
+  background-image: url('img/gallery/pexels-photo.jpeg');
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero h1{
+  color: #fff;
+  font-size: 3em;
+  align-self: center;
+  justify-self: center;
+}
+.hero p{
+  margin:0;
+  padding:10px;
+  color: #fff;
+  font-size: 1.5em;
+  align-self: center;
+  justify-self: center;
+}
+.about{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.circular-wrap{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+}
+.circular{
+  margin:auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:2px solid #000;
+
+}
+.circular-1{
+background-image: url('img/about/1.jpeg');
+background-size: cover;
+background-position: center;
+}
+.circular-2{
+background-image: url('img/about/1.jpeg');
+background-size: cover;
+background-position: center;
+}
+.circular-3{
+background-image: url('img/about/1.jpeg');
+background-size: cover;
+background-position: center;
+}
+/********************************Services***********************************/
+#services{
+  margin:0;
+  padding:0;
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.services-hero{
+  margin:0;
+  padding:0;
+  background-image:url('img/image4.jpeg');
+  height:50vh;
+  width:100%;
+  opacity: 0.8;
+}
+.services-hero .services-text{
+  padding:0;
+  margin:0;
+}
+.services-container{
+  background-color:#ccc;
+}
+.services-items{
+  margin:0 50px 0px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color:#ddd;
+}
+.service{
+  background-color:red;
+  min-height: 200px;
+  min-width: 300px;
+}
+.service:hover{
+  background-color: yellow;
+  transition: 0.7s;
 }
