@@ -266,7 +266,6 @@ header nav{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: #737F76;
   background-color: #ccc;
   text-align: center;
   padding: 1.5rem 2rem;
@@ -277,7 +276,6 @@ header nav{
   box-shadow: 0 10px 15px 0 #000;
 }
 .box:hover{
-  box-shadow: #737F76;
   background-color: #D9FFEC;
   text-align: center;
   padding: 1.5rem 2rem;
@@ -717,33 +715,87 @@ background-position: center;
   background-repeat:no-repeat;
 }
 .services-hero{
-  margin:0;
-  padding:0;
-  background-image:url('img/image4.jpeg');
-  height:50vh;
+
+  /* background-image:url('img/image4.jpeg'); */
+  height:auto;
   width:100%;
   opacity: 0.8;
 }
 .services-hero .services-text{
-  padding:0;
-  margin:0;
+  text-align: center;
+
+  font-family: monospace;
 }
+.services-text h1{
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #38491d;
+}
+/* .services-text p::before{
+  content: open-quote;
+}
+.services-text p::after{
+  content: close-quote;
+  color: #000;
+} */
 .services-container{
-  background-color:#ccc;
+  background-color:#ddd;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding:25px;
+  height: 100vh;
 }
 .services-items{
-  margin:0 50px 0px 50px;
+  margin:50px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   background-color:#ddd;
+
 }
 .service{
-  background-color:red;
+  border-top: 3px solid #38491d;
+  border-left: 3px solid #38491d;
+  padding: 15px;
+  background-color:#ccc;
   min-height: 200px;
   min-width: 300px;
+  justify-content: center;
+  text-align: center;
 }
 .service:hover{
-  background-color: yellow;
+  background-color: #ddd;
+  border-top: none;
+  border-left: none;
+  border-bottom: 3px solid #38491d;
+  border-right: 3px solid #38491d;
   transition: 0.7s;
+  box-shadow: 0 10px 15px 0 #000;
+}
+/*****************************************************************************
+                          contact-us page
+******************************************************************************/
+.contact-container{
+  background-image: url('img/contact.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  width: 100%;
+  margin-top: -20px;
+  padding: 0;
+}
+.main-banner{
+  text-align: center;
+  font-family: monospace;
+}
+.contact-details{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 15px;
+  justify-content: center;
+}
+.details{
+  display: flex;
 }
