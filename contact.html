@@ -41,14 +41,19 @@
       <div class="contact-details">
         <div class="details">
           <div class="contact-number">
-              <h4>Give us a call</h4>
-              <p><span style="color:green">+977</span>9847059929</p>
+              <h4>Give us a call:</h4>
+              <p><span style="color:green">+977</span>-9847059929</p>
+              <h4>Or you can mail us at:</h4>
+              <p>grafiasagro@gmail.com</p>
           </div>
           <div class="social-media">
-              <h4></h4>
-          </div>
-          <div class="mail-address">
-
+              <h4>Follow us on:</h4>
+              <ul>
+                <li><a href="www.facebook.com"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="www.twitter.com"><i class="fab fa-twitter"></i> TWITTER</a></li>
+                <li><a href="www.instagram.com"><i class="fab fa-instagram"></i> INSTAGRAM</a></li>
+                <li><a href="www.youtube.com"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+              </ul>
           </div>
         </div>
         <div class="map">
@@ -56,10 +61,17 @@
         </div>
         <div class="contact-form">
           <form id="my-form" action="">
-            <input type="text" class="name" name="" id="" placeholder="Enter Your Name" >
-            <input type="text" name="" class="mail"  id="" placeholder="Enter Your e-mail">
-            <textarea name="message"class="message"  rows="10" cols="45" placeholder="Enter your message"></textarea>
-            <input type="submit" name="" value="submit">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="" placeholder="Enter Your Name" required >
+              <br>
+              <label for="name">E-mail</label>
+            <input type="email" name="email" class="form-control"  id="" placeholder="Enter Your e-mail" required>
+              <br>
+              <label for="name">Your Message</label>
+            <textarea name="message"class="form-control"  rows="9" cols="45" placeholder="Enter your message" required></textarea>
+              <br>
+            <input type="submit" class="form-control submit" name="" value="submit">
+            <br>
           </form>
         </div>
       </div>
