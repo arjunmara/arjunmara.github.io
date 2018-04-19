@@ -21,7 +21,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
     <header>
       <div class="container">
-        <div id="branding">
+        <div id="branding" style="display:inline">
           <img src="img/logo.jpg" alt="">
         </div>
       <nav id="menu">
@@ -32,8 +32,9 @@
           <li><a href="index.html">Home</a></li>
         </ul>
       </nav>
+
     </header>
-    <section>
+    <section id = "main">
       <div class="wrap">
         <div id="arrow-left" class="arrow">
           <i class="fas fa-angle-double-left fa-4x"></i>
@@ -186,6 +187,61 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, illum.</p>
                 <a href="#" class="my-btn">Read More</a>
               </div>
+              <!--modal for news  -->
+              <div id="news-modal" class="news-modal">
+                <button class="close-Btn">
+                <i class="fas fa-times-circle"></i>
+              </button>
+                <div class="modal-header">
+                  <div class="modal-title-box">
+                    <h2 class="modal-title">News Title</h2>
+                    <hr>
+                    <p class="modal-subtitle">This is for the subtitle</p>
+                  </div>
+                </div>
+                <!--modal header close  -->
+                <!--modal content opener  -->
+                <div class="modal-content-container">
+                  <div class="modal-content">
+                    <div class="modal-news-list">
+                      <ul class="news-list">
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> something.com</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-news">
+                      <div class="news-img">
+                        <img src="img/logo.jpg" alt="">
+                      </div>
+                      <span>By: Arjun Marasini <br> Date:19th April</span>
+                      <div class="main-news-content">
+                        <p class="news-paragraph">Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque qui cumque nisi odio nemo explicabo. Molestiae repellat quisquam ex quam, quaerat delectus, labore vitae! Consequuntur totam provident architecto minus? sit amet, Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit. Tempore porro rerum inventore rem dolore, doloremque, repellat earum, cupiditate excepturi esse vel!</i> Nihil, ipsa. Quam obcaecati, blanditiis nobis recusandae orem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque qui cumque nisi odio nemo explicabo. Molestiae repellat quisquam ex quam, quaerat delectus, labore vitae! Consequuntur totam provident architecto minus? sit amet, Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit. Tempore porro rerum inventore rem dolore, doloremque, repellat earum, cupiditate excepturi esse vel!</i> Nihil, ipsa. Quam obcaecati, blanditiis nobis recusandae soluta iste. Ad architecto vero numquam quia quas, ipsum fugit doloribus neque minima quo? Magni odio natus quaerat tenetur eveniet nisi recusandae. consectetur adipisicing elit. Labore repellat, saepe optio suscipit <i>similique eveniet perspiciatis voluptatum laudantium iste</i>. Laboriosam ea qui ipsam error ratione fuga ullam necessitatibus ut perferendis dolorum odit totam saepe laudantium magni, nulla esse animi, maxime incidunt sed, atque vitae! Dolorum vel sit ullam minima impedit nulla suscipit, ea fugit! Necessitatibus assumenda placeat architecto sequi cum excepturi veniam odit, molestias ea voluptate ipsam rerum dolores vero fuga mollitia molestiae, accusantium similique, repellendus at. Cupiditate, id, alias.</p>
+                        <span>-Arjun Marasini</span>
+                      </div>
+                    </div>
+                    <div class="for-ads">
+                      <div class="adbox">
+                        <div class="adbox-1">
+
+                        </div>
+                        <div class="adbox-2">
+
+                        </div>
+                        <div class="adbox-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- close modelcontainer -->
+              </div>
           </div>
         </div>
       </div>
@@ -266,8 +322,6 @@
       <p>All rights reserved &copy; Grafias Technology </p>
     </div>
   </footer>
-<script src="main.js">
-
-</script>
+<script src="main.js"></script>
 </body>
 </html>

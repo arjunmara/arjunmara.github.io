@@ -29,7 +29,6 @@ body{
   background-color: #18CC1B;
   text-decoration: none;
   border: 0;
-  color: #;
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 10px 15px 0 #000;
@@ -439,6 +438,124 @@ header nav{
   margin-left: 100px;
 }
 
+.news-modal{
+  position: fixed;
+  z-index: 10;
+  top:2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background: #000;
+  color: #fff;
+  border-radius:10px;
+  overflow-y: scroll;
+  box-shadow: 0 0 0 3em rgba(77, 51, 51, 0.29);
+  display: none;
+}
+.is-open{
+  position: fixed;
+  z-index: 10;
+  top:2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background: #000;
+  color: #fff;
+  border-radius:10px;
+  overflow-y: scroll;
+  box-shadow: 0 0 0 3em rgba(77, 51, 51, 0.29);
+  transition: 4s all;
+  display: block;
+}
+.news-modal .close-Btn{
+  position:fixed;
+  background:rgba(0,0,0,0);
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  border: none;
+  top: 2em;
+  border-radius: 50%;
+  left: 93vw;
+  cursor: pointer;
+}
+.modal-header{
+  text-align: center;
+  padding: 5em 0;
+}
+.modal-header .modal-subtitle::before{
+  content: open-quote;
+}
+.modal-header .modal-subtitle::after{
+  content: close-quote;
+}
+.modal-title-box{
+  background: rgba(13, 3, 7, 0.36);
+    width: 70%;
+}
+.modal-header .modal-subtitle{
+  font-size: 2rem;
+  font-family: Tangerine;
+}
+.modal-header .modal-title{
+  font-size: 3rem;
+  font-family: monospace ;
+  padding:0;
+}
+.modal-header:nth-of-type(1){
+  background-image: url("img/fallback.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.modal-content-container,.modal-content-container li a:nth-of-type(1) {
+      background-color: #fff;
+      color:#000;
+      overflow-x: hidden;
+}
+.modal-content-container{
+  display: grid;
+}
+.modal-content{
+  height: 100vh;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.modal-news-list{
+  justify-content: center;
+  background-color: red;
+  align-content: center;
+}
+.main-news .news-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.modal-content.main-news{
+  padding-left: 15px;
+}
+.news-modal .modal-content-container .modal-content .for-ads{
+  display: grid;
+}
+.news-modal .modal-content-container .modal-content .for-ads .adbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+.news-modal .modal-content-container .modal-content .for-ads .adbox .adbox-1,.news-modal .modal-content-container .modal-content .for-ads .adbox .adbox-2,.news-modal .modal-content-container .modal-content .for-ads .adbox .adbox-3{
+
+  height: 200px;
+  width:200px;
+  background-color: #f4f4f4;
+  border: 1px solid #fff;
+  box-shadow: 10px 10px 15px #000;
+}
+
+
 
 /*for loader  */
 .image-loader>img{
@@ -455,7 +572,7 @@ header nav{
 }
 .image-loader .hidden{
    animation: fadeIn 4000;
-  /* fadeOut 3000; */ */
+  /* fadeOut 3000; */
   animation-fill-mode: forwards;
 }
 
@@ -610,6 +727,17 @@ a{
 
 
 /* media query */
+@media (max-width:400px) {
+  .modal-content .for-ads{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-news-list{
+  display: none;
+  }
+
+}
 @media (max-width:568px) {
   header nav, header nav li, header nav li a{
     float: none;
@@ -645,8 +773,17 @@ a{
   .pimg1 a{
     width: 100%;
   }
+  .modal-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-news-list{
+  display: none;
+  }
 }
 
+  }
 
 /**********************************About us************************************/
 
