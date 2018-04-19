@@ -439,17 +439,7 @@ header nav{
 }
 
 .news-modal{
-  position: fixed;
-  z-index: 10;
-  top:2em;
-  bottom: 2em;
-  left: 2em;
-  right: 2em;
-  background: #000;
-  color: #fff;
-  border-radius:10px;
-  overflow-y: scroll;
-  box-shadow: 0 0 0 3em rgba(77, 51, 51, 0.29);
+
   display: none;
 }
 .is-open{
@@ -463,9 +453,11 @@ header nav{
   color: #fff;
   border-radius:10px;
   overflow-y: scroll;
-  box-shadow: 0 0 0 3em rgba(77, 51, 51, 0.29);
-  transition: 4s all;
+  box-shadow: 0 0 0 3em rgba(8, 8, 8, 0.63);
+  transition: 1s all;
   display: block;
+  overflow-y: auto;
+  animation: fadeIn 1s;
 }
 .news-modal .close-Btn{
   position:fixed;
@@ -647,8 +639,8 @@ a{
   /* to{
     opacity: 1;
   } */
-  0% {transform:rotate(0deg);}
-  100% {transform:rotate(360deg);}
+  0% {opacity: 0;}
+  100% {opacity:1;}
 }
 
 @keyframes fadeOut{
