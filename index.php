@@ -29,7 +29,7 @@
     </nav>
   </header>
   <div  class="row">
-    <div class="col-lg-2 col-sm-4 col-md-4 main-container"  id="main">
+    <div class="col-lg-2 col-sm-12 col-md-4 main-container"  id="main">
       <div class="user-info">
         <div class="user-image">
           <img src="user.png" alt="">
@@ -39,18 +39,9 @@
         </div>
       </div>
       <hr>
-      <ul class = "side-menu my-list">
-        <li class="my-list-items active"><a href="index.html"><i class="fas fa-home"></i> HOME<span class="my-icon fas fa-angle-double-right"></span></a></li>
-        <li class="my-list-items"><a href="domains.html"><i class="fas fa-globe"></i> DOMAINS<span class="my-icon fas fa-angle-double-right"></span></a></li>
-        <li class="my-list-items"><a href="clients.html"><i class="fas fa-users"></i> CLIENTS<span class="my-icon fas fa-angle-double-right"></span></a></li>
-        <li class="my-list-items"><a href="employees.html"><i class="fas fa-users"></i> EMPLOYEES<span class="my-icon fas fa-angle-double-right"></span></a></li>
-        <li class="my-list-items"><a href="payment.html"><i class="fas fa-money-bill-alt"></i> PAYMENT<span class="my-icon fas fa-angle-double-right"></span></a></li>
-        <li class="my-list-items"><i class="fas fa-archive"></i> LEAVE MANAGER<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-briefcase"></i></i> PROJECTS<span class="my-icon fas fa-angle-double-right"></span></li>
-      </ul>
-
+    <?php  include('includes/sidebar.php');?>
     </div>
-    <div class="col-lg-10 col-sm-8 col-md-8 content-container">
+    <div class="col-lg-10 col-sm-12 col-md-8 content-container">
       <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 welcome">
           <h3>Welcome to Dashboard</h3>

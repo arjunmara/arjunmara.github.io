@@ -7,6 +7,7 @@ body{
 header{
   margin:0;
   padding: 0;
+  width:100%;
 }
 .menu li{
   display: inline;
@@ -14,7 +15,7 @@ header{
 }
 .menu li a{
   color: inherit;
-  padding:15px 15px;
+  padding-left:15px;
 }
 .menu li a:hover{
   text-decoration: none;
@@ -64,6 +65,12 @@ footer{
 .side-menu{
   width:100%;
 }
+.side-menu ul li a{
+  color:#fff;
+}
+.my-list{
+  color:#000;
+}
 .side-menu.menu-heading{
   text-align: center;
   padding:0;
@@ -71,12 +78,12 @@ footer{
 }
 .my-list{
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   min-height: 60vh;
   width:100%;
   background-color: #ccc;
   list-style: none;
-  padding:0 10px 0 10px;
+  padding:0 15px;
   font-size: 0.7rem;
   font-weight: bold;
   justify-content: flex-start;
@@ -94,12 +101,14 @@ footer{
   /* border-left:1px solid #eee; */
   border-right:2px solid #eee;
 }
+
 .active{
   z-index: 1;
   box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
 }
 .content-container{
   background-color: #f4f4f4;
+  padding:10px;
 }
 .welcome h3{
   text-align: center;
@@ -174,6 +183,9 @@ footer{
   font-size: 1rem;
 }
 /***************************************Employees details*********************/
+.employees-main-container{
+  background-color: #ddd;
+}
 .employees-main-container h5{
   margin-top: 15px;
   color:#7F0904;
@@ -181,7 +193,6 @@ footer{
 .employees-details-container{
   background-color: #ccc;
   border-left: 15px solid #fff;
-  padding:15px;
 
 }
 .employees-details-personal{
@@ -209,4 +220,23 @@ footer{
   box-shadow: -10px 5px 10px #000;
   z-index: 1;
   padding:10px;
+}
+/*************************************for leaves and holidays***************/
+.leaves-container p{
+  background-color:#ccc;
+  padding:20px;
+  border:2px dotted #000
+}
+/************************************Info page******************************/
+.info-heading{
+  padding:5px;
+  color:#7F0904;
+}
+.info-expiry{
+  text-align: center;
+  padding:10px;
+  border-right: 2px solid green;
+}
+.info-expiry h4{
+  font-size: 3rem;
 }

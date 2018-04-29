@@ -29,7 +29,7 @@
     </nav>
   </header>
   <div  class="row">
-    <div class="col-lg-2 col-sm-4 col-md-4 main-container"  id="main">
+    <div class="col-lg-2 col-sm-12 col-md-4 main-container"  id="main">
       <div class="user-info">
         <div class="user-image">
           <img src="user.png" alt="">
@@ -39,24 +39,16 @@
         </div>
       </div>
       <hr>
-      <ul class = "side-menu my-list">
-        <li class="my-list-items"><i class="fas fa-home"></i> HOME<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-globe"></i> DOMAINS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items active"><i class="fas fa-users"></i> CLIENTS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-users"></i> EMPLOYEES<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-money-bill-alt"></i> PAYMENT<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-archive"></i> LEAVE MANAGER<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-briefcase"></i></i> PROJECTS<span class="my-icon fas fa-angle-double-right"></span></li>
-      </ul>
+      <?php  include('includes/sidebar.php');?>
 
     </div>
-    <div class="col-lg-10 col-sm-10 col-md-10 content-container">
+    <div class="col-lg-10 col-sm-12 col-md-8 content-container">
       <!--domain content  -->
       <div class="line">
         <hr>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-sm-6 col-md-6">
+        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
           <span>Show</span>
           <select>
             <option  value="10">10</option>
@@ -66,7 +58,7 @@
           </select>
           <span>Entries</span>
         </div>
-        <div class="col-lg-6 col-sm-6 col-md-6">
+        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
           <div class="search">
             <span>Search:</span>
             <input class="search-box" type="text" name="" id="" placeholder="Search">
@@ -74,79 +66,100 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-6 col-sm-12">
           <div class="table-responsive">
           <table class="table table-bordered">
             <thead>
-              <th>Clients Name</th>
-              <th>Domains Name</th>
-              <th>Domain Status</th>
+              <th>Name</th>
+              <th>Status</th>
               <th>Expiry Date</th>
+              <th>Payment</th>
               <th>Details</th>
             </thead>
             <tbody>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
-              </tr>
-              <tr>
-                <td>Arjun marasini is talsdhflaskhdflashd</td>
-                <td>www.arjunsdfsdfhsdhflaskdflksd.com</td>
-                <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td>25th april</td>
-                <td><a href="clients-details.html">See more</a></td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
+              </tr>
+              <tr>
+                <td>Arjun marasini</td>
+                <td>Active</td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
+              </tr>
+              <tr>
+                <td>Arjun marasini</td>
+                <td>Active</td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
+              </tr>
+              <tr>
+                <td>Arjun marasini</td>
+                <td>Active</td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
+              </tr>
+              <tr>
+                <td>Arjun marasini</td>
+                <td>Active</td>
+                <td>2018/4/29</td>
+                <td>4000 of 9000</td>
+                <td><a class="btn btn-info" href="payment-details.php">See more</a></td>
               </tr>
             </tbody>
           </table>
@@ -155,8 +168,10 @@
         </div>
       </div>
     </div>
-    <footer>
-    <strong><i>Copyright &copy; Grafias Technology All Rights Reserved. licensed to Grafias Technology</i></strong>
+    <footer class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <strong><i>Copyright &copy; Grafias Technology All Rights Reserved. licensed to Grafias Technology</i></strong>
+        </div>
     </footer>
   </div>
 <script src="main.js"></script>

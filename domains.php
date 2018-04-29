@@ -29,7 +29,7 @@
     </nav>
   </header>
   <div  class="row">
-    <div class="col-lg-2 col-sm-4 col-md-4 main-container"  id="main">
+    <div class="col-lg-2 col-sm-12 col-md-4 main-container"  id="main">
       <div class="user-info">
         <div class="user-image">
           <img src="user.png" alt="">
@@ -39,18 +39,10 @@
         </div>
       </div>
       <hr>
-      <ul class = "side-menu my-list">
-        <li class="my-list-items"><i class="fas fa-home"></i> HOME<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-globe"></i> DOMAINS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items active"><i class="fas fa-users"></i> CLIENTS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-users"></i> EMPLOYEES<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-money-bill-alt"></i> PAYMENT<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-archive"></i> LEAVE MANAGER<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-briefcase"></i></i> PROJECTS<span class="my-icon fas fa-angle-double-right"></span></li>
-      </ul>
+      <?php  include('includes/sidebar.php');?>
 
     </div>
-    <div class="col-lg-10 col-sm-10 col-md-10 content-container">
+    <div class="col-lg-10 col-sm-12 col-md-8 content-container">
       <!--domain content  -->
       <div class="line">
         <hr>
@@ -78,85 +70,75 @@
           <div class="table-responsive">
           <table class="table table-bordered">
             <thead>
-              <th>Name</th>
-              <th>Job Title</th>
-              <th>Address</th>
-              <th>Phone</th>
-              <th>Status</th>
-              <th>More-Info</th>
+              <th>Clients Name</th>
+              <th>Domains Name</th>
+              <th>Domain Status</th>
+              <th>Expiry Date</th>
+              <th>Details</th>
             </thead>
             <tbody>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
+              </tr>
+              <tr>
+                <td>Arjun marasini is talsdhflaskhdflashd</td>
+                <td>www.arjunsdfsdfhsdhflaskdflksd.com</td>
+                <td>Active</td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
               <tr>
                 <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
+                <td>www.arjun.com</td>
                 <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
-              </tr>
-              <tr>
-                <td>Arjun marasini</td>
-                <td>Intern</td>
-                <td>Budanilkantha</td>
-                <td>+977-9847059929</td>
-                <td>Active</td>
-                <td><a href="employees-details.html">See more</a></td>
+                <td>25th april</td>
+                <td><a class="btn btn-sm btn-success" href="domain-details.php">See more</a></td>
               </tr>
             </tbody>
           </table>

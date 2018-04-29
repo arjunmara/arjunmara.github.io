@@ -39,16 +39,7 @@
         </div>
       </div>
       <hr>
-      <ul class = "side-menu my-list">
-        <li class="my-list-items"><i class="fas fa-home"></i> HOME<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-globe"></i> DOMAINS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items active"><i class="fas fa-users"></i> CLIENTS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-users"></i> EMPLOYEES<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-money-bill-alt"></i> PAYMENT<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-archive"></i> LEAVE MANAGER<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-briefcase"></i></i> PROJECTS<span class="my-icon fas fa-angle-double-right"></span></li>
-      </ul>
-
+      <?php  include('includes/sidebar.php');?>
     </div>
     <div class="col-lg-10 col-sm-10 col-md-10">
       <div class="table-responsive">

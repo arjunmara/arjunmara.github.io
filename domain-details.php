@@ -29,7 +29,7 @@
     </nav>
   </header>
   <div  class="row">
-    <div class="col-lg-2 col-sm-4 col-md-4 main-container"  id="main">
+    <div class="col-lg-2 col-sm-12 col-md-4 main-container"  id="main">
       <div class="user-info">
         <div class="user-image">
           <img src="user.png" alt="">
@@ -39,26 +39,20 @@
         </div>
       </div>
       <hr>
-      <ul class = "side-menu my-list">
-        <li class="my-list-items"><i class="fas fa-home"></i> HOME<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-globe"></i> DOMAINS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items active"><i class="fas fa-users"></i> CLIENTS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-users"></i> EMPLOYEES<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-money-bill-alt"></i> PAYMENT<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-archive"></i> LEAVE MANAGER<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-briefcase"></i></i> PROJECTS<span class="my-icon fas fa-angle-double-right"></span></li>
-      </ul>
+      <?php  include('includes/sidebar.php');?>
 
     </div>
-    <div class="col-lg-10 col-sm-10 col-md-10">
+    <div class="col-lg-10 col-sm-12 col-md-8">
       <div class="table-responsive">
           <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
                       <th>Clients Name</th>
                       <th>Domains Name</th>
+                      <th>Client Address</th>
                       <th>Domain Status</th>
-                      <th>Client Since</th>
+                      <th>FTP User Name</th>
+                      <th>FTP Password</th>
                       <th>Expiry Date</th>
                     </tr>
                   </thead>
@@ -66,39 +60,20 @@
                       <tr>
                         <td>Arjun Travels</td>
                         <td>arjunmarasini.com</td>
+                        <td>Budanilkantha Kathmandu</td>
                         <td>Active</td>
-                        <td>2018/04/24</td>
+                        <td>Arjun</td>
+                        <td>************</td>
                         <td>2018/04/24</td>
                       </tr>
                     </tbody>
               </table>
     </div>
-    <div class="row">
-      <div class="info-clients col-lg-4 col-md-4 col-sm-4">
-          <div class="info-clients-heading">
-            <h1>Contact Information</h1>
-          </div>
-          <hr>
-          <p>Address: Budanilkantha</p>
-          <p>Phone: +977-9847059929</p>
-          <p>Primary Email: arjun.marasini10@gmail.com</p>
-          <p>Secondary Email: nothing@gmail.com</p>
+    <div class="remarks col-lg-12 ">
+      <div class="heading-remarks">
+        <h3>Remarks</h3>
       </div>
-      <div class="info-clients col-lg-4 col-md-4 col-sm-4">
-        <div class="info-clients-heading">
-          <h1>SERVICES</h1>
-        </div>
-        <hr>
-        Wed design, web development, monitoring, helping in the desk and Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis consequatur quas. Nisi autem qui vero delectus necessitatibus ducimus ipsam.
-      </div>
-      <div class="info-clients col-lg-4 col-md-4 col-sm-4">
-        <div class="info-clients-heading">
-          <h1>Remarks</h1>
-        </div>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veniam minus impedit tenetur quasi officia delectus repellat ipsam asperiores! Ullam placeat aspernatur repellat voluptatibus facilis molestiae fugit iure, aliquam unde exercitationem, asperiores dicta, odit inventore! Suscipit iste ex accusamus! Minima.</p>
-      </div>
-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas tempore voluptates alias cumque omnis maiores magni hic? Nulla sit reiciendis non, officia accusantium natus, amet debitis magnam autem ratione quisquam nihil assumenda laboriosam earum eaque! Culpa facere nulla soluta vel, aperiam atque. Facere cumque omnis maxime? Porro quo, voluptatum soluta.</p>
     </div>
 </div>
     <footer>

@@ -29,7 +29,7 @@
     </nav>
   </header>
   <div  class="row">
-    <div class="col-lg-2 col-sm-12 col-md-4 main-container"  id="main">
+    <div class="col-lg-2 col-sm-12 col-md-4 col-xs-12 main-container"  id="main">
       <div class="user-info">
         <div class="user-image">
           <img src="user.png" alt="">
@@ -39,28 +39,18 @@
         </div>
       </div>
       <hr>
-      <ul class = "side-menu my-list">
-        <li class="my-list-items active"><i class="fas fa-home"></i> HOME<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-globe"></i> DOMAINS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-users"></i> CLIENTS<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-users"></i> EMPLOYEES<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-money-bill-alt"></i> PAYMENT<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-archive"></i> LEAVE MANAGER<span class="my-icon fas fa-angle-double-right"></span></li>
-        <li class="my-list-items"><i class="fas fa-briefcase"></i></i> PROJECTS<span class="my-icon fas fa-angle-double-right"></span></li>
-      </ul>
+      <?php  include('includes/sidebar.php');?>
 
     </div>
-    <div class="col-lg-10 col-sm-12 col-md-8">
+    <div class="col-lg-12 col-sm-12 col-md-8 col-xs-12">
       <div class="table-responsive">
           <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
                       <th>Clients Name</th>
                       <th>Domains Name</th>
-                      <th>Client Address</th>
-                      <th>Domain Status</th>
-                      <th>FTP User Name</th>
-                      <th>FTP Password</th>
+                      <th>Client's Status</th>
+                      <th>Client Since</th>
                       <th>Expiry Date</th>
                     </tr>
                   </thead>
@@ -68,20 +58,57 @@
                       <tr>
                         <td>Arjun Travels</td>
                         <td>arjunmarasini.com</td>
-                        <td>Budanilkantha Kathmandu</td>
                         <td>Active</td>
-                        <td>Arjun</td>
-                        <td>************</td>
+                        <td>2018/04/24</td>
                         <td>2018/04/24</td>
                       </tr>
                     </tbody>
               </table>
     </div>
-    <div class="remarks col-lg-12 ">
-      <div class="heading-remarks">
-        <h3>Remarks</h3>
+    <div class="row">
+      <div class="info-payment col-lg-8 col-md-8 col-sm-12">
+        <h4>Payment Status</h4>
+        <hr>
+        <table class ="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>Payment Year</th>
+                  <th>Total Amount</th>
+                  <th>Received Amount</th>
+                  <th>Pending Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2018</td>
+                  <td>25000</td>
+                  <td>20000</td>
+                  <td>5000</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>25000</td>
+                  <td>20000</td>
+                  <td>5000</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>25000</td>
+                  <td>20000</td>
+                  <td>5000</td>
+                </tr>
+              </tbody>
+        </table>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas tempore voluptates alias cumque omnis maiores magni hic? Nulla sit reiciendis non, officia accusantium natus, amet debitis magnam autem ratione quisquam nihil assumenda laboriosam earum eaque! Culpa facere nulla soluta vel, aperiam atque. Facere cumque omnis maxime? Porro quo, voluptatum soluta.</p>
+
+      <div class="info-clients col-lg-4 col-md-4 col-sm-12">
+        <div class="info-clients-heading">
+          <h1>Remarks</h1>
+        </div>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veniam minus impedit tenetur quasi officia delectus repellat ipsam asperiores! Ullam placeat aspernatur repellat voluptatibus facilis molestiae fugit iure, aliquam unde exercitationem, asperiores dicta, odit inventore! Suscipit iste ex accusamus! Minima.</p>
+      </div>
+
     </div>
 </div>
     <footer>
